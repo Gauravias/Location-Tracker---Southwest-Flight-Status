@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+$font: 'Lato', sans-serif;
+
+$red: #F44336;
+$blue: #1E88E5;
+$yellow: #FDD835;
+$black: #3C3C3C;
+$white: #F7F7F7;
+
+
+html {
+  display: grid;
+  min-height: 100%;
+}
+
+body {
+  display: grid;
+  font-family: $font;
+  background: url('https://images.unsplash.com/photo-1538097304804-2a1b932466a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1250&q=80');
+}
+
+.container {
+  position: relative;
+  background: rgba($white, .8);
+  margin: auto;
+  overflow: hidden;
+  border-radius: 15px;
+  width: 350px;
+  height: 520px;
+}
+
+p {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: $black;
+}
+a {
+  transition: all .4s ease;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.sw-logo {
+  display: none;
+  position: absolute;
+  right: 0;
+  margin: 15px;
+  width: 30px;
+  height: 30px;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.date {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  margin: 8%;
+  p {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-top: 12px;
+    color: $black;
+    span {
+      color: $red;
+      font-size: 15px;
+    }
+  }
+}
+
+.line {
+  position: absolute;
+  width: 83%;
+  height: 3px;
+  background: $red;
+  left: 8%;
+  top: 13%;
+}
+.blue {
+  position: absolute;
+  width: 33%;
+  background: $blue;
+  height: 100%;
+}
+.yellow {
+  width: 33%;
+  background: $yellow;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.flight-number {
+  position: absolute;
+  margin: 8%;
+  margin-left: 13%;
+  top: 12%;
+}
+.flight {
+  background: $blue;
+  color: $white;
+  padding: 3px;
+}
+
+.airports {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  top: 14%;
+  left: -1%;
+  text-align: center;
+  i {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    color: $yellow;
+  }
+  .depart {
+    margin: 0;
+    margin-left: 5px;
+    color: $red;
+  }
+}
+
+ul {
+  margin: 0;
+  list-style-type: none;
+  text-align: left;
+  padding: 13%;
+}
+
+li {
+  display: inline-block;
+  padding-right: 50px;
+  h1 {
+    margin: 0;
+    color: $black;
+    font-size: 3em;
+    font-weight: 300;
+  }
+}
+.nopadding {
+  padding-right: 0;
+}
+
+.time {
+  margin-top: 35px;
+  font-size: 24px;
+  color: $black;
+  span {
+    font-size: 15px;
+    color: $black;
+  }
+}
+.status {
+  position: absolute;
+  left: 14%;
+  bottom: 4%;
+  p {
+    color: $black;
+    background: $yellow;
+  }
+}
+
+.gates {
+  position: absolute;
+  width: 100%;
+  top: 44%;
+  left: 4%;
+  ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 9%;
+  }
+  li {
+    padding-right: 73px;
+    padding-top: 5px;
+  }
+  .nopadding {
+    padding-right: 0;
+  }
+  h2 {
+    color: $white;
+    background: $red;
+    padding: 5px;
+    span {
+      font-size: 10px;
+      text-transform: uppercase;
+      font-weight: 200;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+.map {
+  position: absolute;
+  top: 62%;
+  left: 13%;
+  height: 24%;
+  width: 84%;
+  img {
+    margin-top: -15px;
+    width: 90%;
+  }
+  h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 1em;
+    color: $black;
+    span {
+      color: $black;
+      background: $yellow;
+    }
+  }
+}
+
+.southwest {
+  position: absolute;
+  background: $blue;
+  width: 100%;
+  height: 5%;
+  padding: 6px 0;
+  bottom: 0; 
+  text-align: center;
+  p {
+    color: $white;
+    margin: 8px;
+  }
+  a {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: $yellow;
+    font-size: 10px;
+    &:hover {
+      background: $white;
+      color: $red;
+    }
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-transform: uppercase;
+  padding: 10px;
+  font-family: $font;
+  p {
+    letter-spacing: 3px;
+    font-size: 10px;
+    color: #fff;
+  }
+  a {
+    color: #aaa;
+    text-decoration: none;
+    &:hover {
+      color: #7d7d7d;
+    }
+  }
